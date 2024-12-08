@@ -62,12 +62,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: "Linux (x86-64)"
+          - name: "Linux"
             runner-image: ubuntu-latest
             classifier: "linuxx86-64"
-          - name: "Linux (arm64)"
-            runner-image: ubuntu-latest
-            classifier: "linuxarm64"
           - name: "macOS"
             runner-image: macos-latest
             classifier: "osxuniversal"
